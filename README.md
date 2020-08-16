@@ -102,7 +102,7 @@ Breaking up the elements/features into seperate managable commits/PRs would be b
 
 ## Learn More
 
--This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br />
--The chart was created using [HighCharts](https://www.highcharts.com/docs/index).<br />
--The star rating component comes from [react-rating-stars-component](https://github.com/ertanhasani/react-stars).<br />
--Forms [Formik](https://github.com/formium/formik).<br />
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br />
+- The chart was created using [HighCharts](https://www.highcharts.com/docs/index).<br />
+- The star rating component comes from [react-rating-stars-component](https://github.com/ertanhasani/react-stars).<br />
+- Forms [Formik](https://github.com/formium/formik).<br />
