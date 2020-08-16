@@ -1,0 +1,55 @@
+@import "./styles/buttons.scss";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 32px;
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: 956px) {
+    height: auto;
+  }
+}
+
+.Review {
+  width: 80%;
+  min-width: 400px;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 32px 0;
+  height: 100%;
+
+  &__reviewList {
+    overflow: scroll;
+    padding: 20px 0;
+    flex: 1;
+
+    @media (max-width: 956px) {
+      height: 500px;
+      flex: none;
+    }
+  }
+
+  &__formChart {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    @media (max-width: 956px) {
+      justify-content: center;
+    }
+  }
+}
+
+#reviewsChart {
+  min-width: 350px;
+  max-width: calc(100% - 350px);
+  margin-top: 48px;
+  flex: 1;
+}
