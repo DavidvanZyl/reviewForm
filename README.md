@@ -1,6 +1,6 @@
 # Review Form
 
-Review form with customer review trend chart and latest comments.
+Review form with customer review trend chart and latest comments. [DEMO](https://productreviews.davidvanzyl.io/)
 
 If you notice any issues/improvements feel free to get in touch, make an issue here on github or create a PR.
 
