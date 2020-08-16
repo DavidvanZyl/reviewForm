@@ -13,17 +13,15 @@ describe("ReviewForm", () => {
 
   it("sumbit is called and no errors with valid input", async () => {
     const handleSubmit = jest.fn();
-    const { findAllByTestId, findByText, findByPlaceholderText } = render(
+    const { findAllByTestId, findByText, findByTestId } = render(
       <ReviewForm handleSubmit={handleSubmit} />
     );
 
-    const nameInput = (await findByPlaceholderText("Name")) as HTMLInputElement;
-    const emailInput = (await findByPlaceholderText(
+    const nameInput = (await findByTestId("name")) as HTMLInputElement;
+    const emailInput = (await findByTestId(
       "Email Address"
     )) as HTMLInputElement;
-    const commentInput = (await findByPlaceholderText(
-      "Comment"
-    )) as HTMLInputElement;
+    const commentInput = (await findByTestId("comment")) as HTMLInputElement;
     const submitButton = (await findByText("Submit")) as HTMLButtonElement;
 
     userEvent.type(nameInput, "TestName");
